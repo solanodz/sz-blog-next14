@@ -9,7 +9,7 @@ const NavLinks = ({ item }) => {
 
     return (
         <Link href={item.path}>
-            <p className={`${pathName === item.path ? 'bg-zinc-950 text-white font-semibold' : ''} p-1 px-2 text-zinc-200 rounded-full hover:font-semibold duration-300`}>
+            <p className={`${pathName === item.path ? 'bg-zinc-950 text-white font-semibold' : ''} p-1 px-2 text-white rounded-full hover:font-semibold hover:text-cyan-500 duration-300`}>
                 {item.title}
             </p>
         </Link>

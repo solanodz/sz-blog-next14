@@ -8,7 +8,7 @@ import Image from 'next/image'
 
 const Navbar = () => {
     return (
-        <div className='flex bg-black z-50 justify-between items-center p-3 px-12 text-white  fixed top-0 left-0 right-0'>
+        <div className='flex bg-black z-50 justify-between items-center p-3 px-12 text-white text-sm fixed top-0 left-0 right-0'>
             <div>
                 <Link href='/'>
                     <Image src='/sz-blanco.png' alt='logo' width={40} height={40} />

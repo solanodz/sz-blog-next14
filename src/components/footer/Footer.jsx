@@ -5,8 +5,8 @@ import Link from 'next/link'
 const Footer = () => {
     return (
         <footer className='border-t border-zinc-800'>
-            <div className=' flex justify-between items-center mt-3'>
-                <h2 className='text-muted-foreground flex items-center'>Designed and developed by
+            <div className=' flex sm:justify-between flex-col gap-3 sm:flex-row text-center items-center mt-3'>
+                <h2 className='text-muted-foreground flex text-xs sm:text-md items-center'>Designed and developed by
                     <Link href={'https://sz-dev-portfolio.vercel.app/'} target='_blank' className='font-semibold text-white ml-1 hover:mr-2 duration-200'
                     >@solanodz
                     </Link>

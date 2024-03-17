@@ -11,6 +11,7 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
+import { CgMenuRight } from "react-icons/cg";
 
 
 const Links = () => {
@@ -59,8 +60,8 @@ const Links = () => {
             </div>
 
             <Sheet>
-                <SheetTrigger className='md:hidden flex' onClick={() => setIsOpen(prev => !prev)}>Menu</SheetTrigger>
-                <SheetContent className='bg-zinc-900'>
+                <SheetTrigger className='md:hidden flex' onClick={() => setIsOpen(prev => !prev)}><CgMenuRight className="text-3xl" /></SheetTrigger>
+                <SheetContent className='bg-zinc-950'>
                     <SheetHeader>
                         <SheetDescription>
                             {
