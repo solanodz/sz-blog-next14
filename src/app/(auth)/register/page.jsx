@@ -4,6 +4,11 @@ import { Input } from '@/components/ui/input'
 import React from 'react'
 import { poppins } from '@/ui/fonts'
 
+export const metadata = {
+    title: 'sz.blog | Register',
+    description: 'sz.blog | Register here',
+}
+
 const RegisterPage = () => {
     return (
         <div>

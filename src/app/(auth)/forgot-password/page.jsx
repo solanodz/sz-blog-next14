@@ -1,5 +1,10 @@
 import React from 'react'
 
+export const metadata = {
+    title: 'sz.blog | Recover password',
+    description: 'sz.blog | Recover password page',
+}
+
 const ForgotPasswordPage = () => {
     return (
         <div>

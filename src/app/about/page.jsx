@@ -4,16 +4,21 @@ import React from 'react'
 import { FaCss3, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaJs, FaNode, FaNodeJs, FaReact } from 'react-icons/fa'
 import { SiExpress, SiFirebase, SiMongodb, SiNextdotjs, SiTailwindcss, SiVercel } from "react-icons/si";
 
+export const metadata = {
+    title: 'sz.blog | About Me',
+    description: 'sz.blog | About Me page',
+}
+
 const AboutPage = () => {
     return (
-        <div className="items-start min-h-[45rem] w-fit dark:bg-black bg-white  dark:bg-grid-white/[0.1] bg-grid-black/[0.1] relative justify-center">
+        <div className="items-start min-h-[45rem] sm:mx-12 mx-0 w-fit dark:bg-black bg-white  dark:bg-grid-white/[0.1] bg-grid-black/[0.1] relative justify-center">
             {/* Radial gradient for the container to give a faded look */}
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]"></div>
 
-            <div className='flex lg:flex-row flex-col justify-between gap-20 mx-20 items-center'>
-                <div className='h-fit items-center'>
-                    <h2 className={`${poppins.className} text-7xl my-3 font-bold antialiased`}>THIS IS ME</h2>
-                    <div className='flex flex-col gap-2 font-light text text-xl'>
+            <div className='flex lg:flex-row flex-col justify-between gap-20 mx-6 items-center'>
+                <div className='h-fit items-center relative'>
+                    <h2 className={`${poppins.className} text-4xl sm:text-7xl my-3 font-bold antialiased `}>THIS IS ME</h2>
+                    <div className='flex flex-col gap-2 font-light text text-xs sm:text-xl relative'>
                         <p>
                             I&apos;M NOT JUST A FRONT-END DEVELOPER. I ALSO HOLD A DEGREE IN PHYSICAL EDUCATION FROM TUCUMAN, ARGENTINA. MY PASSION FOR SPORTS AND FITNESS HAS ALWAYS DRIVEN ME, BUT AMIDST THE CHALLENGES OF THE COVID PANDEMIC, I DISCOVERED THE EXCITING WORLD OF PROGRAMMING AND REMOTE WORK.
                         </p>
@@ -25,7 +30,7 @@ const AboutPage = () => {
                         </p>
 
                     </div>
-                    <div className='text-4xl text-muted-foreground flex-wrap flex my-3 gap-3 '>
+                    <div className='text-2xl sm:text-4xl text-muted-foreground flex-wrap flex my-3 gap-1 sm:gap-3 '>
                         <FaFigma className='hover:scale-110 duration-200' />
                         <FaHtml5 className='hover:scale-110 duration-200' />
                         <FaCss3 className='hover:scale-110 duration-200' />
@@ -49,7 +54,7 @@ const AboutPage = () => {
                     alt='foto de perfil'
                     height={400}
                     width={400}
-                    className='my-auto'
+                    className='mb-12 sm:my-auto relative'
                 />
             </div>
         </div>

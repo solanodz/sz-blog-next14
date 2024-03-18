@@ -1,4 +1,4 @@
-"use client"
+
 
 import ArgFlag from "@/components/ArgFlag";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -7,6 +7,11 @@ import { Laugh } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowCircleDown, FaArrowDown } from "react-icons/fa";
+
+export const metadata = {
+  title: 'sz.blog | Home',
+  description: 'sz.blog',
+}
 
 const Home = () => {
   return (
@@ -39,7 +44,7 @@ const Home = () => {
         </div>
       </div>
       <section className="justify-between flex flex-col md:flex-row items-center">
-        <div className="h-[45rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.15] bg-grid-black/[0.15] relative flex items-center justify-center">
+        <div className="h-[45rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.25] bg-grid-black/[0.25] relative flex items-center justify-center">
           {/* Radial gradient for the container to give a faded look */}
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
           <p className=" text-3xl md:text-5xl sm:max-w-6xl font-bold text-white text-center mx-auto my-96">
